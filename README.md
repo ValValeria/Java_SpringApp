@@ -16,7 +16,7 @@
 ![admin](./screenshots/admin_panel3.PNG)
 ![admin](./screenshots/admin_panel2.PNG)
 ![admin](./screenshots/admin_panel.PNG)
-//git add . & git commit -m "make it better" & git push heroku master
+
 ## How to run the app
 In the terminal, type the following:
 * `npm install`
