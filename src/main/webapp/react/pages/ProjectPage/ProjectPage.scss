@@ -1,0 +1,48 @@
+@import "../../styles/base";
+
+.project{
+  .post__content{
+      margin-bottom: $margin-sm;
+  }
+
+  .project__description, .project__languages,.project__github{
+    margin-bottom: $margin-sm*2;
+  }
+
+  .project__description .project__description-txt {
+    padding-top:$margin-sm;
+  }
+
+  .project__languages-items{
+    padding-top:$margin-sm;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,200px));
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .project__languages-items button{
+    width:100%;
+  }
+
+  .project__languages-item{
+    padding: $margin-sm $margin-sm*2;
+  }
+
+  .project__languages-txt{
+    flex: 1 1 calc(100% - 40px);
+    text-align:left;
+    font-weight:350;
+    text-transform: lowercase;
+    margin-left: $margin-sm/2;
+  }
+
+  .project__languages .h3,.project__description .h3{
+    padding-bottom:$margin-sm/2;
+  }
+
+  .card:hover{
+    transform: none !important;
+  }
+}

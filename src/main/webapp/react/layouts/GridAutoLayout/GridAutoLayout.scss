@@ -1,0 +1,15 @@
+@import '../../styles/base';
+
+.grid[role="component"]{
+    width:100%;
+
+   .grid__items{
+     display:grid;
+     width:100%;
+     grid-auto-rows: auto;
+     grid-gap:$margin-sm*2;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+   }
+}

@@ -1,0 +1,104 @@
+@import '../../styles/base';
+
+.develop-skills{
+  .develop-skills__item{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .develop-skills__title, .develop-skills__description{
+    grid-column: 2/-1;
+  }
+
+  .develop-skills__list-right{
+    grid-column: 3/4;
+    text-align:left;
+  }
+
+  img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .develop-skills__img{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    align-self: center;
+    justify-self: center;
+    width:100%;
+    height:100%;
+  }
+
+  .grid__items{
+    grid-gap: $margin-sm/2 !important;
+  }
+
+  .develop-skills__item{
+    margin-bottom: $margin-sm*1.5;
+  }
+
+  .develop-skills__icon{
+    grid-row: 1/span 2;
+    align-self: center;
+    justify-self: center
+  }
+
+  .develop-skills__list-left{
+    grid-column: 1/2;
+    text-align: right;
+
+    .develop-skills__icon {
+       grid-column: 2/3;
+    }
+
+    .develop-skills__title, .develop-skills__description{
+      grid-column: 1/2;
+    }
+
+    .develop-skills__item {
+      grid-template-columns: 70% 30%;
+    }
+  }
+
+  .develop-skills__list-right .develop-skills__item{
+     justify-self: start;
+     width: 100%;
+  }
+}
+
+
+@media screen and (max-width: $media-header){
+  .develop-skills > .grid > .grid__items{
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+  }
+
+  .develop-skills .develop-skills__list-right{
+    grid-column: 2/3 !important;
+    grid-row: 1/2 !important;
+  }
+
+  .develop-skills__list-left{
+    grid-column: 1/2 !important;
+    text-align: left !important;
+
+    .develop-skills__icon {
+      grid-column: 1/2 !important;
+    }
+
+    .develop-skills__title, .develop-skills__description{
+      grid-column: 2/3 !important;
+    }
+
+    .develop-skills__item {
+      grid-template-columns: 30% %70 !important;
+    }
+  }
+
+  .develop-skills__img{
+    grid-column: 1/-1 !important;
+    grid-row: 2/3 !important;
+  }
+}
+

@@ -1,0 +1,24 @@
+@import '../../../styles/base';
+
+.comment{
+  .comment-txt{
+    text-transform: capitalize;
+    margin-left: 1.875rem;
+    flex: 1 1 calc(100% - 40px);
+    width: calc(100% - 40px);
+    word-break: break-word;
+
+    .h4{
+      margin-bottom: $margin-sm/2;
+    }
+  }
+
+  .comment__wrap{
+    padding: $margin-sm 6px;
+  }
+
+  .comment__user-avatar{
+    flex: 1 1 40px;
+    width: 40px;
+  }
+}

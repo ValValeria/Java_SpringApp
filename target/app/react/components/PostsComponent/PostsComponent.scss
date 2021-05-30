@@ -1,0 +1,28 @@
+@import '../../styles/base.scss';
+
+.posts[page="home"]{
+  .posts__item{
+    margin-right:$margin-sm;
+    height:100%;
+
+    :nth-child(3){
+      margin-right: 0;
+    }
+
+    .posts__item-area,
+    .posts__item-card,
+    .card__wrap,
+    .card__content,
+    .card__items{
+      height:100%;
+    }
+
+    .posts__item-content{
+      height: calc(100% - 300px);
+    }
+  }
+
+  .posts__list .grid__items{
+     justify-content: start;
+  }
+}

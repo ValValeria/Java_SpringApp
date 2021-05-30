@@ -1,0 +1,54 @@
+@import "../../styles/base";
+
+.post {
+  .post__image-wrap img{
+    width:100%;
+    object-fit: cover;
+    border-radius:$border-radius;
+    height:300px;
+    filter: grayscale(0.015);
+    background: linear-gradient(0deg , rgba(30, 28, 33, 0.62) 0%, rgba(65, 64, 66, 0.14) 38.14%);
+  }
+
+  .section__items .post__elem{
+    margin-bottom: $margin-sm*2;
+  }
+
+  .post__large-btn{
+    position: absolute;
+    bottom: $margin-sm;
+    right:$margin-sm;
+
+    button span{
+      color: $light-gray-color;
+    }
+  }
+
+  .post__other-posts{
+    margin-top: $margin-sm*3;
+  }
+
+  .post__other-posts-items{
+    margin-top:$margin-sm*2;
+  }
+}
+
+.backdrop__content{
+  width:100%;
+  height: 400px;
+  overflow-y: scroll;
+
+  img{
+    width:100%;
+    object-fit: contain;
+  }
+}
+
+.backdrop__image-container{
+  height:100%;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: 900px !important;
+  width:90vw !important;
+}

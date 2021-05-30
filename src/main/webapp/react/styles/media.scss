@@ -1,0 +1,155 @@
+@import 'base.scss';
+
+@media all and (max-width:$media-header){
+  h1,.h1{
+    font-size: 50px;
+  }
+
+  .about__items{
+    flex-direction: column;
+  }
+
+  .section__wrap{
+    padding: $margin-sm*5 0 $margin-sm*4;
+  }
+
+  .projects__search-content .card__items{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+  }
+
+  .about__item:nth-child(2){
+    padding-top:$margin-sm;
+  }
+
+  .skills__list,.projects__list{
+    flex-wrap:wrap;
+  }
+
+  .projects__list{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section__description h5 {
+    max-width: 500px;
+  }
+
+  .decoration{
+    display:none !important;
+  }
+
+  .section .section__wrap{
+    width:84%;
+  }
+
+  .projects__list-item{
+    width: 100%;
+    flex: 1 1 100%;
+    margin: $margin-sm;
+    max-width: 100%;
+  }
+
+  .form{
+    max-width: 500px;
+  }
+}
+
+
+@media all and (max-width:$media-header*1.5) {
+  .footer__links{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap:$margin-sm;
+    align-items: center;
+    justify-items: center;
+    justify-content: start !important;
+    width: 100%;
+  }
+}
+
+@media all and (max-width:$media-header*0.65) {
+  .section__wrap{
+    padding: $margin-sm*4 0 $margin-sm*2 !important;
+  }
+
+  .h4, h4{
+    font-size: 20px;
+  }
+
+  .h5, h5{
+    font-size: 16px;
+  }
+
+  .h6, h6{
+    font-size: 14px;
+  }
+
+  .post[aria-label=post] .post__item > .h3, .post[aria-label=post] .post__item > h3 {
+    margin-bottom: $margin-sm;
+  }
+
+  .banner__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .develop-skills > .grid > .grid__items {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .h2, h2{
+    font-size: 40px;
+  }
+
+  .questions__wrap{
+    padding: 0 !important;
+  }
+
+  .grid__items > .reason{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .posts[page=home] .posts__list .grid__items{
+    justify-content: center;
+  }
+
+  .get-emails__content > .card{
+    flex-direction: column;
+  }
+
+  .get-emails__input{
+    margin-right: 0 !important;
+    margin-bottom: $margin-sm !important;
+  }
+
+  .get-emails__btn{
+    flex: 1 1 50% !important;
+    width: 60% !important;
+
+    .btn, .btn-orange{
+      width:100%;
+    }
+  }
+
+  .banner__items h1{
+    font-weight: 300 !important;
+    word-break: break-all;
+  }
+
+  .develop-skills .develop-skills__list-left, .develop-skills .develop-skills__list-right{
+    width:100%;
+    max-width: 100%;
+
+    .develop-skills__item{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

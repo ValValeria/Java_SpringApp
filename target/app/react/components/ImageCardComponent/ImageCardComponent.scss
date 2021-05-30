@@ -1,0 +1,35 @@
+@import '../../styles/base';
+
+.img-card{
+  .img-card__img img{
+    width: 100%;
+    border-radius: $border-radius;
+    height: 300px;
+    max-height:300px;
+    object-fit: cover;
+    background: linear-gradient(0deg , rgba(30, 28, 33, 0.62) 0%, rgba(65, 64, 66, 0.14) 38.14%);
+  }
+
+  .img-card__img{
+    margin-bottom:$margin-sm*2;
+  }
+
+  .img-card__content{
+    flex-direction: column;
+    text-align:center;
+    padding: $margin-sm*2;
+    padding-top:0;
+  }
+
+  .img-card__title{
+    margin-bottom:$margin-sm*2;
+  }
+
+  .img-card__txt{
+    margin-bottom:$margin-sm;
+  }
+
+  .img-card__title h4{
+    font-weight: 400;
+  }
+}

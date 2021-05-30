@@ -1,0 +1,41 @@
+.loading{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:999999999;
+    background-color:#414042;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    transition: opacity 2s ease;
+}
+
+.loading svg{
+    transform: scale(0.8);
+    max-width:100%;
+}
+
+.loading__percentages{
+    width:95%;
+    max-width: 600px;
+    height: 60px;
+    background: #363537;
+    border-radius: 30px;
+    position: relative;
+}
+
+#percentages{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:calc(100% / 3);
+    background: #FFD850;
+    border-radius: 30px;
+    transition: width 3s ease;
+}
+
+

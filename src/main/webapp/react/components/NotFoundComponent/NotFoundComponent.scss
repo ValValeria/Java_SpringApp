@@ -1,0 +1,10 @@
+.not-found-sm{
+  .not-found__content{
+    flex-direction: column;
+  }
+
+  .not-found__img img{
+    width: 100%;
+    max-width: 300px;
+  }
+}

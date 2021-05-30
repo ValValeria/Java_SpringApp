@@ -1,0 +1,86 @@
+@import '../../styles/base';
+
+:root{
+  --margin-sm:$margin-sm;
+}
+
+.about{
+  .about__img-wrap,.about__img-content{
+    position: relative;
+  }
+
+  .about__items{
+    justify-content: space-between;
+  }
+
+  .about__img-content{
+    z-index:1;
+    max-height:530px;
+    padding: 0 $margin-sm;
+  }
+
+  .about__item:nth-child(1){
+    flex: 1 1 50%;
+    padding-right: $margin-sm*2;
+    position: relative;
+
+    .about__description{
+      margin: 45px 0 30px;
+      max-width:620px;
+      width:100%;
+    }
+
+    .about__line{
+      position: absolute;
+      left:0;
+      top:4px;
+    }
+  }
+
+  .about__item:nth-child(2){
+    flex: 1 1  46%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height:100%;
+
+    .about__img-wrap{
+      height:100%;
+      padding:10px;
+      height: calc(100% - 40px);
+      margin-top:20px;
+    }
+  }
+
+  .about__content{
+    display:flex;
+    justify-content: center;
+  }
+
+  .about__headline div{
+    margin-top: 1.2rem;
+    color: #6A686C;
+  }
+
+  .about__headline .h3{
+    font-weight:400;
+  }
+
+  .about__img-container{
+    position: relative;
+    max-width:500px;
+    z-index:1;
+    height:100%;
+    width:100%;
+
+    img{
+      object-fit: contain !important;
+    }
+  }
+
+  .about__img-background{
+    position: absolute;
+    width:100%;
+    min-height:70%;
+    z-index:-1;
+  }
+}

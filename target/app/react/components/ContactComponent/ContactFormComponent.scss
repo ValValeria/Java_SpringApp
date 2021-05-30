@@ -1,0 +1,9 @@
+@import '../../styles/style';
+
+.contacts__form{
+  @extend .center;
+}
+
+.form__control{
+  width:100% !important;
+}

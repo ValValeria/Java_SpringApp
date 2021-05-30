@@ -1,0 +1,10 @@
+.search[page="search"]{
+  .image-handler__loading{
+    height: 100% !important;
+  }
+
+  .search__list .grid__items{
+    justify-items: start !important;
+    justify-content: left !important;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+#projects-page{
+   .projects__area > div{
+     margin-bottom: $margin-sm * 2;
+   }
+
+  .projects__list-item {
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    max-width: $media-header !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: $margin-sm*2;
+  }
+
+  .projects__list{
+    flex-direction: column !important;
+  }
+}

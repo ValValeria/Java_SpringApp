@@ -1,0 +1,38 @@
+@import '../../styles/style';
+
+.get-emails{
+  .get-emails__wrap{
+    flex-direction: column;
+  }
+  .get-emails__content{
+    max-width:$media-header/1.5;
+    width: 100%;
+    margin-bottom: $margin-sm;
+  }
+  .get-emails__input input{
+    @extend .form__input;
+  }
+
+  .get-emails__img{
+    flex: 1 1 100%;
+    width:100%;
+    max-width:$media-header;
+    position: relative;
+    z-index: -1;
+
+    img{
+      object-fit:contain;
+      width:100%;
+      min-width:$media-header/4;
+      max-width:$media-header;
+    }
+  }
+
+  .get-emails__input{
+    flex: 1 1 calc(100% - 125px - 1.25rem);
+  }
+
+  .get-emails__btn{
+    margin: $margin-sm/2;
+  }
+}

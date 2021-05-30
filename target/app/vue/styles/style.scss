@@ -1,0 +1,83 @@
+@import 'src/main/webapp/vue/styles/variables';
+
+*{
+  margin:0;
+  padding:0;
+  color: $dark-color;
+}
+
+:root{
+  --margin-sm:margin-sm;
+}
+
+.shadow{
+  box-shadow:  6px 6px 12px #f0f0f0,
+  -6px -6px 12px #ffffff !important;
+}
+
+.p-all{
+  padding: $margin-sm;
+}
+
+.bg-light{
+  background-color: $light-color !important;
+}
+
+.add-post__options,.add-post__setup {
+  margin-top:$margin-sm;
+}
+
+.light-border{
+  border: thin solid rgba(0,0,0,.12) !important;
+}
+
+.wrap{
+  max-width:850px;
+  margin:0 auto;
+  width:90%;
+}
+
+.container{
+  padding: $margin-sm 0;
+}
+
+.v-navigation-drawer__content {
+  width:100%;
+}
+
+header{
+  background-color: white !important;
+  @extend .shadow;
+}
+
+.section > div{
+  margin-top:$margin-sm*3;
+  margin-bottom: $margin-sm;
+}
+
+.section__body > div{
+  margin-bottom: $margin-sm;
+}
+
+.v-card{
+  padding: calc(1.25rem - 16px);
+}
+
+.center{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+body::-webkit-scrollbar-track, .backdrop__content::-webkit-scrollbar-track {
+  background-color: $light-color;
+  box-shadow: inset 15px 15px 14px #e4e3e3,
+  inset -15px -15px 14px #ffffff;
+}
+
+body::-webkit-scrollbar-thumb, .backdrop__content::-webkit-scrollbar-thumb{
+  border-radius:$border-radius;
+  background: #bfbfc1;
+  box-shadow:  15px 15px 14px #e4e3e3,
+  -15px -15px 14px #ffffff;
+}
