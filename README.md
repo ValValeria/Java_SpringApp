@@ -21,7 +21,7 @@
 In the terminal, type the following:
 * `npm install`
 * `npm run watch`<br/>
-In addition, you need to create tables, which correspond with entities, located in src/main/java/models. Also you should fill out the file, named src/main/resources/db.properties<br/>
+In addition, you need to create tables, which correspond with entities, located in src/main/java/models. Also you should fill out the file, named  `src/main/resources/db.properties`.<br/>
 Then run the tomcat server. If you don't want to install tomcat and only view static website, you should
 run the command `node server.js` and open browser on `http://localhost:4200`
 
